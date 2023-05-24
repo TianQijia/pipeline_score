@@ -1,0 +1,10 @@
+^D:\WORK_SPACE\PIPLINETD-MAIN\PIPLINETD-MAIN\DLLFILES\BIN\CMAKEFILES\B4B0FB1E1D97A81D0D6D4E4B3641C19D\GENERATE.STAMP.RULE
+setlocal
+D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\bin\cmake.exe -SD:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles -BD:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/my_plugin.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

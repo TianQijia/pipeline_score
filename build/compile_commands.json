@@ -1,0 +1,20 @@
+[
+{
+  "directory": "C:/Users/tianq/Desktop/pipeline_score/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles\\ScoreManager.dir\\ScoreManager.cpp.obj -c C:\\Users\\tianq\\Desktop\\pipeline_score\\ScoreManager.cpp",
+  "file": "C:/Users/tianq/Desktop/pipeline_score/ScoreManager.cpp",
+  "output": "CMakeFiles/ScoreManager.dir/ScoreManager.cpp.obj"
+},
+{
+  "directory": "C:/Users/tianq/Desktop/pipeline_score/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles\\ScoreManager.dir\\DataStructure.cpp.obj -c C:\\Users\\tianq\\Desktop\\pipeline_score\\DataStructure.cpp",
+  "file": "C:/Users/tianq/Desktop/pipeline_score/DataStructure.cpp",
+  "output": "CMakeFiles/ScoreManager.dir/DataStructure.cpp.obj"
+},
+{
+  "directory": "C:/Users/tianq/Desktop/pipeline_score/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -O3 -DNDEBUG -std=gnu++11 -o CMakeFiles\\ScoreManager.dir\\main.cpp.obj -c C:\\Users\\tianq\\Desktop\\pipeline_score\\main.cpp",
+  "file": "C:/Users/tianq/Desktop/pipeline_score/main.cpp",
+  "output": "CMakeFiles/ScoreManager.dir/main.cpp.obj"
+}
+]

@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C3AABA7B-E2F3-3DB3-A886-9DF7370CB6E7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>my_plugin</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">my_plugin.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">my_plugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">my_plugin.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">my_plugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">my_plugin.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">my_plugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">my_plugin.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">my_plugin</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";my_plugin_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";my_plugin_EXPORTS</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\bin\cmake.exe -E __create_def D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/my_plugin.dir/Debug/exports.def D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/my_plugin.dir/Debug//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/Debug/my_plugin.lib</ImportLibrary>
+      <ModuleDefinitionFile>D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/my_plugin.dir/Debug/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/Debug/my_plugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";my_plugin_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";my_plugin_EXPORTS</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\bin\cmake.exe -E __create_def D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/my_plugin.dir/Release/exports.def D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/my_plugin.dir/Release//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/Release/my_plugin.lib</ImportLibrary>
+      <ModuleDefinitionFile>D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/my_plugin.dir/Release/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/Release/my_plugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";my_plugin_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";my_plugin_EXPORTS</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\bin\cmake.exe -E __create_def D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/my_plugin.dir/MinSizeRel/exports.def D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/my_plugin.dir/MinSizeRel//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/MinSizeRel/my_plugin.lib</ImportLibrary>
+      <ModuleDefinitionFile>D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/my_plugin.dir/MinSizeRel/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/MinSizeRel/my_plugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";my_plugin_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";my_plugin_EXPORTS</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\bin\cmake.exe -E __create_def D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/my_plugin.dir/RelWithDebInfo/exports.def D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/my_plugin.dir/RelWithDebInfo//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/RelWithDebInfo/my_plugin.lib</ImportLibrary>
+      <ModuleDefinitionFile>D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/my_plugin.dir/RelWithDebInfo/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/RelWithDebInfo/my_plugin.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\bin\cmake.exe -SD:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles -BD:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin --check-stamp-file D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\3.24.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\bin\cmake.exe -SD:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles -BD:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin --check-stamp-file D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\3.24.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\bin\cmake.exe -SD:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles -BD:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin --check-stamp-file D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\3.24.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\bin\cmake.exe -SD:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles -BD:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin --check-stamp-file D:/Work_Space/piplineTD-main/piplineTD-main/DLLFiles/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\Dependence\cmake\cmake-3.24.2-windows-x86_64\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\3.24.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\TimerWork.cpp" />
+    <ClCompile Include="D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\DataStructure.cpp" />
+    <ClCompile Include="D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\ScoreManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\ZERO_CHECK.vcxproj">
+      <Project>{26550352-E39C-3F1D-8FC0-C23D4402EC25}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

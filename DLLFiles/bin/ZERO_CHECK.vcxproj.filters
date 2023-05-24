@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Work_Space\piplineTD-main\piplineTD-main\DLLFiles\bin\CMakeFiles\b4b0fb1e1d97a81d0d6d4e4b3641c19d\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0BC1AEE3-1671-3054-880C-316C83781035}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
